@@ -257,7 +257,8 @@ footer{
   
   .section-logo{
     grid-template-columns: 1fr;
-    
+    gap: 40px;
+    padding: 125px;
   }
   
   footer{
@@ -271,10 +272,6 @@ footer{
   .section-snippet, 
   footer{
     flex-direction: column;
-  }
-  
-  .section-logo{
-    grid-template-columns: 1fr;
   }
   
   .footer-contact{
