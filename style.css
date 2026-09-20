@@ -1,0 +1,293 @@
+:root{
+  /*----------neutral color--------*/
+  --neutral1: hsl(210, 10%, 33%);
+  --neutral2: hsl(201, 11%, 66%);
+  
+  
+  /*--------primary color-------*/
+  
+  --primary1: hsl(171, 66%, 44%);
+  --primary2: hsl(233, 100%, 69%);
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Bai Jamjuree";
+}
+
+
+
+#main-header{
+  text-align: center;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100vh;
+  */
+}
+
+h2, 
+h3{
+  color: var(--neutral1);
+}
+
+.header-image{
+  height: 300px;
+  width: 100%;
+  background-image: url("images/bg-header-desktop.png");
+  padding-top: 8%;
+}
+
+.header-image img{
+  width: 80px;
+}
+
+.header-paragraph{
+  margin-top: 8%;
+  padding: 0 15%;
+  color: var(--neutral2);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.snippet-paragraph{
+  margin: 8px 0 80px 0;
+  padding: 0 15%;
+  color: var(--neutral2);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.header-button{
+  margin: 25px 0 80px 0;
+}
+
+.header-button1{
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  background-color: var(--primary1);
+  border: none;
+  height: 45px;
+  width: 160px;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.header-button1:hover{
+  background-color: var(--primary2);
+  opacity: 0.8;
+}
+
+.header-button2{
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  background-color: var(--primary2);
+  border: none;
+  height: 45px;
+  width: 160px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+header-button2:hover{
+  background-color: var(--primary1);
+  opacity: 0.8;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+.device-img{
+  max-width: 100%;
+  height: auto;
+}
+.middle-section{
+  display: flex;
+  
+  }
+  
+  .middle-paragraph{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--neutral2);
+}
+
+.middle-section-img{
+  
+  margin-right: 8%;
+}
+
+.middle-section-paragraph{
+  
+ margin: 3% 16% 3% 0;
+  
+}
+
+
+.middle{
+  margin-bottom: 4%;
+}
+
+.main-header{
+  margin-top: 6%;
+}
+
+.snippet{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--neutral2);
+}
+
+.section-snippet{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px;
+  gap: 40px;
+}
+
+
+.section-logo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  padding: 80px;
+}
+
+.middle-button{
+  text-align: center;
+}
+
+footer{
+  background-color: var(--neutral2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  }
+  .header-button1, 
+  .header-button2, 
+  .footer-contact p{
+    cursor: pointer;
+  }
+  
+  .repeat-logo{
+    width: 60px;
+  }
+  
+.footer-contact,
+.footer-logo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  color: whitesmoke;
+}
+
+.footer-contact1 p, 
+.footer-contact2 p{
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.footer-contact1-p{
+  color: var(--primary1);
+}
+
+.footer-contact p:hover{
+  color: var(--primary2);
+}
+
+.footer-logo img:hover{
+  opacity: 0.8;
+}
+
+
+@media(max-width: 600px){
+  
+  body{
+    text-align: center;
+  }
+  
+.header-image {
+  height: 200px;
+  background-image: url("images/bg-header-mobile.png");
+}
+  
+  .middle-section-img{
+    margin-right: 0;
+  }
+  
+  .middle-section-paragraph{
+    margin: 3% 0;
+  }
+  
+  .header-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-button1{
+    margin-right: 0;
+  }
+  
+  .section-snippet{
+    padding: 40px 20px;
+  }
+  
+  .section-logo{
+    grid-template-columns: 1fr;
+    
+  }
+  
+  footer{
+    padding: 30px 20px;
+  }
+  
+  .middle-section{
+    flex-direction: column;
+  }
+  
+  .section-snippet, 
+  footer{
+    flex-direction: column;
+  }
+  
+  .section-logo{
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-contact{
+    display: block;
+  }
+  
+  
+  .footer-contact{
+    margin-top: 15px;
+  }
+  
+  
+  .footer-contact1 p, 
+ .footer-contact2 p{
+  margin-bottom: 15px;
+}
+  
+  .footer-logo{
+    display: flex;
+   justify-items: space-around;
+   margin-top: 30px;
+  }
+}
