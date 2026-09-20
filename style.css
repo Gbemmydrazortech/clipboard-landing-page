@@ -173,6 +173,10 @@ img{
   padding: 80px;
 }
 
+.section-logo img{
+  margin-bottom: 30px;
+}
+
 .middle-button{
   text-align: center;
 }
@@ -250,6 +254,11 @@ footer{
   .header-button1{
     margin-right: 0;
   }
+
+  .header-button1,
+  .header-button2{
+    width: 240px;
+  }
   
   .section-snippet{
     padding: 40px 20px;
@@ -259,6 +268,10 @@ footer{
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 125px;
+  }
+
+  .section-logo img{
+    margin-bottom: 30px:
   }
   
   footer{
